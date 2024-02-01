@@ -1,0 +1,193 @@
+/* 通用样式 */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:#d8e3e7
+}
+
+header {
+    background: #333; /* 可以替换为图片 */
+    width: 99%;
+    margin: 0 auto; 
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* 横幅样式 */
+.logo{
+    margin-top: 20px;
+    margin-left: 0;
+}
+
+#home {
+    background: url('images/home-background.jpg') no-repeat center center; /* 替换为实际的横幅图片路径 */
+    background-size: cover;
+    width: 99%;
+    padding: 200px 0;
+    text-align: center;
+    margin: 0 auto; 
+    color: #fff;
+}
+
+#home h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+#home p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* 服务样式 */
+#services {
+    width: 80%;
+    height: auto;
+    background-color: #d8e3e7;
+    padding: 20px 0;
+    color:#000000;
+    text-align: center;
+    margin: 0 auto; 
+    h2{
+        margin-top: 45px;
+        color: #000;
+    }
+}
+
+.service-item {
+    width: 30%;
+    margin: 1%;
+    display: inline-block;
+    text-align: center;
+    /* 在这里添加背景图片 */
+    background-color: #ffffff00; /* 替换为实际的服务图片路径 */
+    background-size: cover;
+}
+
+/* 关于我们样式 */
+#about {
+    display: flex;
+    align-items: center; /* 确保子元素垂直居中 */
+    justify-content: space-between; /* 子元素之间保持间隔 */
+    padding: 20px; /* 或者根据你的设计需求 */
+}
+
+#about {
+    display: flex;
+    align-items: center; /* 如果你想让他们在垂直方向上居中对齐 */
+    justify-content: space-between; /* 如果你想在它们之间有一些间隔 */
+}
+
+#aboutText, #about-logo {
+    /* 如果需要，可以添加一些内边距来防止内容紧贴边缘 */
+    padding: 10px;
+}
+
+#aboutText{
+    margin-left: 180px;
+    margin-right: 100px;
+}
+
+#about-logo{
+    margin-left: auto;
+    margin-right: 180px;
+}
+
+/* 联系信息样式 */
+#contact-info-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+}
+
+#contact, #map{
+    padding: 10px;
+}
+
+#contact{
+    margin-left: 200px;
+    margin-right: 100px;
+    color: #ffffff;
+}
+
+#qr-code{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#map{
+    margin-left: auto;
+    margin-right: 220px;
+    margin-top: 45px;
+}
+
+/* 页脚样式 */
+footer {
+    background-color: #333; /* 可以替换为图片 */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .service-item {
+        width: 90%;
+        margin: 5% auto;
+    }
+
+    #contact-info-wrapper {
+        flex-direction: column;
+    }
+
+    #map iframe {
+        width: 100%;
+        height: 300px; /* 调整为适合移动设备的大小 */
+    }
+}
